@@ -23,6 +23,8 @@ AF_DCMotor m_r(4,MOTOR34_64KHZ); // Channels 4 at 64KHZ frequency
 #define MOD 200
 #define MIN 100
 
+  int s_l,s_r,s_m; //gets sensor readings
+
 void setup() {
   Serial.begin(9600);
 
@@ -42,8 +44,6 @@ void setup() {
 }
 
 void loop() {
-  
-  int s_l,s_r,s_m;
   
   s_r = analogRead(A0);
   s_m = analogRead(A1);
