@@ -8,7 +8,7 @@
  * Don't forget to remove the jumper when using seperate power supplies
  * Motor sheild is powered by a battery of 1.5V cells (12V total) using the EXT_PWR pins on the sheild.
  * The chassis is made using acrylic plexiglass sheets with two decks for the boards and battery seperately
- * 
+ * Author : Ashish Trivedi
  */
 
 #include <AFMotor.h> // this file uses the adafruit motor shield library
@@ -23,7 +23,7 @@ AF_DCMotor m_r(4,MOTOR34_64KHZ); // Channels 4 at 64KHZ frequency
 #define MOD 200
 #define MIN 100
 
-int s_l,s_r,s_m; //gets sensor readings
+  int s_l,s_r,s_m; //gets sensor readings
 
 void setup() {
   Serial.begin(9600);
