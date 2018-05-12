@@ -35,7 +35,7 @@ void setup() {
   Serial.println("Pins initialized");
   
   // turn on motor
-  m_l.setSpeed(255);
+  m_l.setSpeed(255); // m_l: left motor, m_r: right motor
   m_r.setSpeed(255);
   m_l.run(RELEASE);
   m_r.run(RELEASE);
@@ -45,7 +45,7 @@ void setup() {
 
 void loop() {
   
-  s_r = analogRead(A0);
+  s_r = analogRead(A0); // s_r: right sensor, s_m: middle sensor, s_l: left sensor 
   s_m = analogRead(A1);
   s_l = analogRead(A2);
 
